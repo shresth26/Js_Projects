@@ -69,3 +69,17 @@ nav ul{
 .bb-0{
     border-bottom: 0;
 }
+
+#reset{
+    margin: 10px 23px;
+    padding: 6px 14px;
+    background: hsl(297, 42%, 90%);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.info{
+    font-size: 25px;
+}
