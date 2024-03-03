@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, rgb(130, 130, 198), rgb(188, 188, 245));
+    color: rgb(237, 226, 226);
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.3rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.3rem;
+    background: white;
+}
+
+.todo-button{
+    color:  rgb(188, 188, 245);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todo-button:hover{
+    background:  rgb(188, 188, 245);
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list{
+    list-style-type: none;
+    width: 25%;
+}
+
+.todo{
+    font-size: 1.2rem;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 1.5rem;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.completed-btn, .trash-btn{
+    background-color: rgb(188, 188, 245);
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.completed-btn{
+    background-color: rgb(2, 157, 2);
+}
+
+.trash-btn{
+    background-color: rgb(231, 106, 43);
+}
+
+/* so that clicking on the trash button doesn't just click on the icon tag but instead you can click
+anywhere now and that element shall be deleted */
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
